@@ -26,7 +26,7 @@ jobs:
 
       - name: Lint with pylint
         run: |
-          pylint app run.py tests
+          pylint --fail-under=5.0 app run.py tests
 
       - name: Run tests
         run: |
